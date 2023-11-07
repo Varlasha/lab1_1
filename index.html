@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>laba 1.1</title>
+  </head>
+
+  <body>
+    <h1>HTML + CSS + JS</h1>
+    <h2>Варламова София Р34672</h2>
+    <div class="content1">
+      <button onclick="showPhoto()">Показ фото №1</button>
+      <button onclick="showRandPhoto()">Рандомное фото</button>
+      <button onclick="addPhoto()">Добавить фото рядом</button>
+    </div>
+    <br />
+    <div class="content2">
+      <label for="interval">Введите интервал:</label>
+      <input type="number" id="interval" min="1" oninput="validateInterval()" />
+      <button onclick="startTimer()">Начать показ</button>
+      <button onclick="stopTimer()">Остановить показ</button>
+    </div>
+    <br /><br />
+    <div id="photo" class="photo"></div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
